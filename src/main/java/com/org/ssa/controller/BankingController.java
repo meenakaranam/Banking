@@ -52,4 +52,9 @@ public class BankingController {
          String st1 = bankingService.updateAddressBasedOnBranch(branch);
          return st1;
     }
+    @PutMapping("/updateAddressBasedOnId/{id}")
+    public String updateAddressBasedOnId(@PathVariable Integer id){
+        String y=bankingService.updateAddressBasedOnId(id);
+       return y;
+    }
 }

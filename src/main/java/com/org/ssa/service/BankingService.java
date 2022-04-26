@@ -17,6 +17,8 @@ public interface BankingService {
     public String deleteByBranch(String branch);
 
     public String updateAddressBasedOnBranch(String branch);
+
+    public String updateAddressBasedOnId(Integer id);
 }
 
 
